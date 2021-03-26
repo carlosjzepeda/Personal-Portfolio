@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-family: 'Mukta', sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+    background-color: black;
+    color: white;
+}
+
+body {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+/*navbar*/
+.navbar {
+    display: grid;
+    gap: 8em;
+    grid-template-columns: repeat(4, .06fr);
+    justify-content: flex-end;
+    font-weight: 800;
+    list-style-type: none;
+    text-align: center;
+    padding: 50px;
+    margin: 1em;
+    font-size: 1rem;
+
+}
+
+.navtext {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.navtext::before {
+    content:'';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: left;
+    transition: .2s ease;
+
+}
+
+.navtext:hover::before {
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+
+
+
+/*Aligns page section titles*/
+.title {
+    text-align: right;
+    font-size: 2em;
+}
+
+/*wrapper for pages*/
+
+.container {
+    margin: 3em;
+    height: auto;
+    width: auto;
+}
+
+/* MAIN PAGE/LANDING PAGE */
+.about-page {
+    display: grid;
+    gap: 1em;
+}
+
+.introduction {
+
+    font-size: 4rem;
+}
+
+.background-change:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+/*skills page section*/
+
+.skills-page {
+    display: grid;
+}
+
+/*projects page section*/
+
+
+
+/*floating animation*/
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+
+    }
+
+    50% {
+        transform: translateY(15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/*contact page section*/
+
+.contact-page {
+    display: grid;
+    justify-content: center;
+}
