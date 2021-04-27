@@ -8,60 +8,181 @@
     <link rel="stylesheet" href="portfolio.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/uuu5isd.css">
+    <script src="portfolio.js"></script>
     <title>Carlos Zepeda Portfolio</title>
 </head>
 
 <body>
-    <nav>
-        <ul class="navbar">
-            <li class="navtext">ABOUT</li>
-            <li class="navtext">SKILLS</li>
-            <li class="navtext">PROJECTS</li>
-            <li class="navtext">CONTACT</li>
-        </ul>
-    </nav>
-    <div class="container">
-        <div class="about-page">
-            <h1 class="introduction"> <strong>Hi</strong>, I'm Carlos Zepeda an aspiring web designer.</h1>
-            <p>My hobbies include <span class="background-change"> music production</span>, photography, and
-                videography. Tambien hablo <strong class="background-change">Español!</strong></p>
+    <!-- This is the navbar -->
+    <section>
+        <nav>
+            <ul class="navbar">
+                <li class="navtext">ABOUT</li>
+                <li class="navtext">PROJECTS</li>
+                <li class="navtext">SKILLS</li>
+                <li class="navtext">CONTACT</li>
+            </ul>
+        </nav>
+    </section>
+    <!-- This is the introduction page -->
+    <section>
+        <div class="container">
+            <div class="about-page">
+                <h1 class="introduction"> <strong>Hi</strong>, I'm Carlos Zepeda an aspiring web designer.</h1>
+                <p class="intro-text">I studied Marketing at Georgia State University in Atlanta from 2019-2021. My
+                    hobbies
+                    include <a href="https://soundcloud.com/sixtybelow"><span class="background-change">
+                            music
+                            production</span></a>, photography,
+                    videography and web designing . Tambien hablo <strong class="background-change">Español!</strong>
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="container">
-        <h2 class="title">SKILLS</h2>
-        <div class="skills-page">
-            <p>For my designing tools I use Adobe XD, Photoshop, After Effects, Premiere & Zeplin.</p>
-            <div class="logo-grid">
-                <img class="logo-img" src="images\adobexd.png" alt="">
-                <img class="logo-img" src="images\photoshop.png" alt="">
-                <img class="logo-img" src="images\aftereffects.png" alt="">
-                <img class="logo-img" src="images\premiere.png" alt="">
-                <img class="logo-img" src="images\git-icon-black.png" alt="">
-            </div>
-            <p>For turning my designs into a reality I use HTML5, CSS3, Javascript, Bootstrap 4 & Git. </p>
-            <div class="logo-grid">
-                <img class="logo-img" src="images\HTML5.png" alt="">
-                <img class="logo-img" src="images\css3.png" alt="">
-                <img class="logo-img" src="images\javascript.png" alt="">
-                <img class="logo-img" src="images\BOOTSTRAP.png" alt="">
-                <img class="logo-img" src="images\git-icon-black.png" alt="">
-            </div>
-            <div class="progress">
+    </section>
+    <!--This is the projects page-->
+    <section>
+        <div class="container">
+            <div class="projects-page">
+                <h2 class="title">PROJECTS</h2>
+                <!-- The container for the boxes -->
+                <div class="project-grid-container">
+                    <!-- This is the first box and its content-->
+                    <div class="first box">
+                        <a href="https://loquedicen.netlify.app/"><img class="img" src="images\LoQueDicen.png"
+                                alt="loquedicen site image"></a>
+                        <div class="text">
+                            <h2>PROJECT NAME: LOQUEDICEN</h2>
+                            <p>LOQUEDICEN is a modern redesign on a music news site.</p>
+                            <!-- These are the buttons -->
+                            <div class="button-grid">
+                                <a href="https://github.com/carlosjzepeda/LoQueDicenBlog" target="_blank"><button
+                                        class="btn">VIEW
+                                        CODE</button></a>
+                                <a href="https://loquedicen.netlify.app/" target="_blank"><button class="btn">VIEW
+                                        PROJECT</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- This is the first box text-->
+                    <div class="grid-text">
+                        <h2>LOQUEDICEN</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolorum illo natus ut
+                            quibusdam suscipit fugit sequi iure ea quaerat repudiandae autem iusto aspernatur inventore,
+                            labore a, temporibus magnam blanditiis?</p>
+                    </div>
+                    <!-- This is the second box and its content-->
+                    <div class="second box">
+                        <a href="https://loquedicen.netlify.app/"><img class="img" src="images\LoQueDicen.png"
+                                alt="loquedicen site image"></a>
+                        <div class="text">
+                            <h2>PROJECT NAME: LOQUEDICEN</h2>
+                            <p>LOQUEDICEN is a modern redesign on a music news site.</p>
+                            <!-- These are the buttons -->
+                            <div class="button-grid">
+                                <a href="https://github.com/carlosjzepeda/LoQueDicenBlog" target="_blank"><button
+                                        class="btn">VIEW
+                                        CODE</button></a>
+                                <a href="https://loquedicen.netlify.app/" target="_blank"><button class="btn">VIEW
+                                        PROJECT</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- This is the second box text-->
+                    <div class="grid-text">
+                        <h2>SAMPLE TITLES</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolorum illo natus ut
+                            quibusdam suscipit fugit sequi iure ea quaerat repudiandae autem iusto aspernatur inventore,
+                            labore a, temporibus magnam blanditiis?</p>
+                    </div>
+                    <!-- This is the third box and its content-->
+                    <div class="third box">
+                        <a href="https://loquedicen.netlify.app/" id="img-link"><img class="img"
+                                src="images\LoQueDicen.png" alt="loquedicen site image"></a>
+                        <div class="text">
+                            <h2>PROJECT NAME: LOQUEDICEN</h2>
+                            <p>LOQUEDICEN is a modern redesign on a music news site.</p>
+                            <!-- These are the buttons -->
+                            <div class="button-grid">
+                                <a href="https://github.com/carlosjzepeda/LoQueDicenBlog" target="_blank"><button
+                                        class="btn">VIEW
+                                        CODE</button></a>
+                                <a href="https://loquedicen.netlify.app/" target="_blank"><button class="btn">VIEW
+                                        PROJECT</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- This is the third box text-->
+                    <div class="grid-text">
+                        <h2>SAMPLE TITLES</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolorum illo natus ut
+                            quibusdam suscipit fugit sequi iure ea quaerat repudiandae autem iusto aspernatur inventore,
+                            labore a, temporibus magnam blanditiis?</p>
+                    </div>
 
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="projects-page">
-            <h2 class="title">PROJECTS</h2>
+    </section>
+    <!-- This is the skills page -->
+    <section>
+        <div class="container">
+            <h2 class="title">SKILLS</h2>
+            <div class="skills-page">
+                <div class="skills-container">
+                    <div>
+                        <h2>Here's what I use to design</h2>
+                        <p>Adobe XD, Photoshop, After Effects, Premiere & Zeplin.</p>
+                    </div>
+                    <div class="skills-box">
+                        <img class="skill-img" src="images\Brand Logos\adobexd.png" alt="Adobe XD Logo">
+                        <img class="skill-img" src="images\Brand Logos\photoshop.png" alt="Adobe Photoshop Logo">
+                        <img class="skill-img" src="images\Brand Logos\aftereffects.png" alt="Adobe After Effects Logo">
+                        <img class="skill-img" src="images\Brand Logos\premiere.png" alt="Adobe Premiere">
+                        <img class="skill-img zeplin" src="images\Brand Logos\zeplin-logo.png" alt="Zeplin Logo">
+                    </div>
+                </div>
+                <div class="skills-container">
+                    <div>
+                        <h2>Here's how I implement my designs</h2>
+                        <p>HTML5, CSS3, Javascript, Bootstrap 4 & Git.</p>
+                    </div>
+                    <div class="skills-box">
+                        <img class="skill-img" src="images\Brand Logos\html5.png" alt="Adobe XD Logo">
+                        <img class="skill-img" src="images\Brand Logos\css logo.png" alt="Adobe Photoshop Logo">
+                        <img class="skill-img" src="images\Brand Logos\javascript.png" alt="Adobe After Effects Logo">
+                        <img class="skill-img" src="images\Brand Logos\bootstrap logo.png" alt="Adobe Premiere">
+                        <img class="skill-img zeplin" src="images\Brand Logos\git logo.png" alt="Zeplin Logo">
+                    </div>
+                </div>
+                <div class="skills-container">
+                    <div>
+                        <h2>Here's what I'm currently learning</h2>
+                        <p>React</p>
+                    </div>
+                    <div class="skills-box">
+                        <img class="skill-img" src="images\Brand Logos\react logo.png" alt="Adobe XD Logo">
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="container">
-        <h2 class="title">CONTACT</h2>
-        <div class="contact-page">
-            <h3>Like what you see? Let's create something, send me an email and I'll respond as soon as possible.</h3>
+        <div class="container">
+            <h2 class="title">CONTACT</h2>
+            <div class="contact-page">
+                <h3>Like what you see? Let's create something, send me an email and I'll respond as soon as possible.
+                </h3>
+                <form class="form" action="https://formspree.io/f/xgerowgj" method="POST">
+                    <input class="form-style" type="text" name="Name" id="name" placeholder="Name" required>
+                    <input class="form-style" type="text" name="subject" placeholder="Subject">
+                    <input class="form-style" type="email" name="email" placeholder="Email" required>
+                    <textarea class="form-style" name="textarea" id="text-box" cols="30" rows="10"
+                        placeholder="Message.." required></textarea>
+                    <div class="submit-container"><input class="btn" id="submit-btn" type="submit" value="SEND"></div>
+
+                </form>
+            </div>
         </div>
-    </div>
+    </section>
 </body>
 
 </html>
