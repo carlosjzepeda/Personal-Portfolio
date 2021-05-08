@@ -166,7 +166,7 @@ a {
 }
 
 #projects-container {
-    height: 100vh;
+    height: auto;
     display: block;
 }
 
