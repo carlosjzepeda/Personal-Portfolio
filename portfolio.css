@@ -151,7 +151,7 @@ a {
 /*projects page section*/
 .project-grid-container {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1fr;
     gap: 5rem;
     justify-content: center;
     width: auto;
