@@ -49,6 +49,14 @@ gsap.from('.navtext', {
 gsap.from('.about-page', {
   x: -100,
   opacity: 0,
-  duration: 1,
+  duration: 1.5,
   ease: "back",
 })
+
+
+gsap.to(".skill-img", {
+  boxShadow:"5px 5px",
+  yoyo: true, 
+  repeat: -1,
+  ease: "sine.inOut"
+});

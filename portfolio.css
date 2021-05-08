@@ -11,7 +11,7 @@
     font-family: 'Mukta', sans-serif;
     font-size: 100%;
     font-weight: 400;
-    background-color: rgb(250, 248, 234);
+    background-color: rgba(255, 229, 195, 1);
     color: rgb(0, 0, 0);
 }
 
@@ -59,6 +59,7 @@ a {
     z-index: 1;
 }
 
+/*Nav Bar animation*/
 .navtext::before {
     content: "";
     position: absolute;
@@ -66,7 +67,7 @@ a {
     height: 2px;
     bottom: -2px;
     left: 0;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     transform: scaleX(0);
     transform-origin: left;
     transition: .2s ease-in-out;
@@ -96,6 +97,7 @@ a {
     min-height: 100vh;
 }
 
+
 /* MAIN PAGE/LANDING PAGE */
 .about-page {
     display: grid;
@@ -109,10 +111,9 @@ a {
     font-size: 4rem;
 }
 
-.background-change:hover {
-    background-color: black;
-    color: white;
-    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+.background-change {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     cursor: pointer;
 }
 
@@ -133,7 +134,7 @@ a {
 .skills-box {
     display: flex;
     justify-content: center;
-    gap: 5px;
+    gap: 2em;
 }
 
 
@@ -142,12 +143,15 @@ a {
     border-radius: 25px;
     height: 100px;
     width: 100px;
+    box-shadow: 10px 10px 2px black;
 }
+
+
 
 /*projects page section*/
 .project-grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     gap: 5rem;
     justify-content: center;
     width: auto;
@@ -155,18 +159,24 @@ a {
     overflow-x: hidden;
     -ms-overflow-style: none;
     scrollbar-width: thin;
-    scroll-snap-type: y mandatory;
+    
 }
 
 .project-grid-container::-webkit-scrollbar {
     display: thin;
 }
 
+#projects-container {
+    height: 100vh;
+    display: block;
+}
+
+
 /*defines box shape*/
 .box {
     display: grid;
-    height: 800px;
-    width: 850px;
+    height: 100vh;
+    width: auto;
     justify-content: center;
     align-items: center;
     color: black;
@@ -176,19 +186,34 @@ a {
 
 }
 
+.grid-text h2 {
+    font-weight: 800;
+    font-family: 'bebas-neue-pro';
+    font-size: 2.5em;
+}
+.grid-text p {
+    font-size: 2em;
+    font-weight: 200;
+    font-family: 'bebas-neue-pro';
+}
+
+.text {
+   text-align: center; 
+}
+
 /*top middle and bottom boxes*/
 .first {
-    background-color: #F0DE00;
+    background-color: #A8E0FF;
     scroll-snap-align: start;
 }
 
 .second {
-    background-color: #A300A3;
+    background-color: #FDB5FF;
     scroll-snap-align: start;
 }
 
 .third {
-    background-color: #003CA3;
+    background-color: #E9FFDBz;
     scroll-snap-align: start;
 }
 
@@ -201,7 +226,8 @@ a {
     gap: 50px;
 }
 
-.btn, .home-btn {
+.btn,
+.home-btn {
     width: 200px;
     height: 35px;
     border-radius: 5px;
@@ -300,8 +326,13 @@ a {
 @media only screen and (max-width: 1700px) {
 
     .box {
-        height: 100vh;
+        height: 80vh;
     }
+
+    .project-grid-container {
+        height: 80vh;
+    }
+
 
     .img {
         display: flex;
@@ -315,3 +346,62 @@ a {
 }
 
 /*Mobile Design*/
+
+@media only screen and (max-width: 900px) {
+    :root {
+        font-size: .5em;
+    }
+
+    .container {
+        min-height: auto;
+    }
+
+    .about-page {
+        display: flex;
+    }
+
+    .skill-img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .grid-text {
+        display: none;
+    }
+
+    .project-grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .box {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .button-grid {
+        display: grid;
+    }
+
+    #projects-container {
+        padding: 0;
+    }
+
+    .text {
+        display: grid;
+        justify-content: center;
+    }
+
+    .navbar {
+        gap: 4em;
+        padding: 0;
+    }
+
+    .btn-container {
+        padding-top: 5em;
+    }
+
+    .project {
+        padding-right: 2em;
+    }
+
+}
